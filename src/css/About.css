@@ -1,0 +1,104 @@
+.about-align {
+  min-height: 100vh !important;
+}
+
+.acc-img1, .acc-img2, .acc-img3, .acc-img4 {
+  width: 100%;
+  height: 50vh;
+  background-size: contain;
+}
+
+.acc-img1 {
+  border-radius: 5px;
+  background-image: url("../assets/responsibility1.png");
+}
+
+.acc-img2 {
+  border-radius: 5px;
+  background-image: url("../assets/teamspirit.png");
+}
+
+.acc-img3 {
+  border-radius: 5px;
+  background-image: url("../assets/creative.png");
+}
+
+.acc-img4 {
+  border-radius: 5px;
+  background-image: url("../assets/passion.png");
+}
+
+.img-after::before {
+  content: "Responsibility";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  font-size: clamp(16px, 11vw, 38px);
+  bottom: 10%;
+  left: 30%;
+  transform: translateX(-50px);
+}
+
+.img-after1::after {
+  content: "Team Spirit";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  font-size: clamp(16px, 11vw, 38px);
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50px);
+}
+
+.img-after2::after {
+  content: "Creativity";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  font-size: clamp(16px, 11vw, 38px);
+  bottom: 10%;
+  left: 40%;
+  transform: translateX(-50px);
+}
+
+.img-after3::after {
+  content: "Passion";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  font-size: clamp(16px, 11vw, 38px);
+  bottom: 10%;
+  left: 45%;
+  transform: translateX(-50px);
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb {
+  margin-bottom: 5vw;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .about-align {
+    flex-direction: column;
+    text-align: center;
+  }
+  .title {
+    margin-left: 20%;
+  }
+  .title .line-up, .title .line-down {
+    display: none;
+  }
+}/*# sourceMappingURL=About.css.map */

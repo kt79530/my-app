@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.hover-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-image {
+  display: block;
+  width: 300px; /* 원하는 크기로 조정 */
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  pointer-events: none; /* 클릭 방해하지 않도록 */
+}/*# sourceMappingURL=HoverImage.css.map */

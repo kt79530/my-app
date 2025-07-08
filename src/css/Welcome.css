@@ -1,0 +1,81 @@
+.wrapper{ 
+  width: 100vw;
+  background-color: rgb(53, 53, 53);}
+.center-box{width: 200px;
+            height: 100vh; /* 전체 화면 높이 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+
+/* 별 이미지 설정 및 호버 효과*/
+.star{width: 150px; height: 150px;  
+      transition: transform 1s ease-in-out;
+      transform-style:preserve-3d;
+      animation: spin 5s linear infinite, fade 2s ease-in-out infinite;
+      cursor: pointer;
+}      
+/*.star.rotate{animation:spin 5s linear infinite, fade 2s ease-in-out infinite;}*/
+/*.move-up{transform: scale(0.3) rotateX(50deg);}*/
+
+@keyframes spin {
+  0% {transform: rotate(20deg) ; }
+  50%{transform: rotateY(15deg);}
+  100% {transform: rotateZ(20deg) ;} 
+}
+@keyframes fade {
+    0%{opacity: 1;}
+    50%{opacity: 0.8;}
+    100%{opacity: 1;}
+}
+
+/*네이게이션 설정 및 호버시 네비게이션 등장
+.nav-menu.visible {
+  opacity: 1;
+  transform: translate(0px, -50vh ) ;
+  transition: 2s ease;
+  pointer-events: auto;
+}
+
+
+.nav-menu{
+  opacity: 0;
+  transform: translate(0px 0px);
+  transition: opacity 2s ease, transform 5s ease;
+  pointer-events: none;
+  
+}*/
+
+
+  
+
+/*.center-box:hover .nav{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+}*/
+
+
+
+/*네비게이션 style*/
+/*.nav{width: 5vw; margin: 0 auto; }  
+
+li:nth-child(1){padding-left: 0;} 
+
+li{
+      list-style: none;
+      padding-left:3vw;
+      
+      }
+a{
+      text-decoration: none;
+      color: white;
+      font-size:clamp(1rem,1.5vw,3rem) ;
+      font-weight: 800;
+    }*/
+
+
+
+
+  

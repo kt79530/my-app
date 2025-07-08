@@ -1,0 +1,18 @@
+.text{width: clamp(20px, 2vw, 54px); }
+
+strong{font-size:clamp(16px, 2vw, 32px);}
+
+.title1{margin-top: 10vh;}
+
+.infor-wrap{
+    margin-top: 10vh;
+    width: 40%;
+    height: 100vh;
+    background-color:white;
+    padding: 2vw;
+    
+    }
+
+@media (max-width:768px){
+    .infor-wrap{margin-top: -500px;}
+}

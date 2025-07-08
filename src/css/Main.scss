@@ -1,0 +1,72 @@
+html, body {
+  //margin: 0;
+  //padding: 0;
+  height: 100%;  /* 부모 요소가 꽉 차게 설정 */
+  background:  #A89F91;
+  //overflow-y: scroll;
+}
+.container{height: 100vh; left: 50%; transform: translateX(4%);}
+.mouse-wrapper{width: 100%; margin-top: -13vh;}
+.mouse-img{
+  width: clamp(30px,3vw,50px);
+  animation: slide-up-down 2s ease infinite 6s, fade 20s ease ;}
+  
+  @keyframes slide-up-down{
+      0%{transform: translateY(0);}
+      50%{transform: translateY(2vh);}
+      100%{transform: translateY(0);}
+  }
+  @keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+.section {
+  width: 100%;
+  height: auto; // 또는 height 지정 안함
+  position: relative; // ✔️ absolute로 설정되어 있지 않게
+  overflow: visible;  // 잘려나가지 않도록
+  padding-bottom: 10vh;
+ // margin: 0 auto;
+}
+
+@media (max-width: 768px){
+.sec-con{padding-top: 500px;}
+.sec-port{margin-left:100px;}
+
+}
+
+
+
+
+
+/*.circle-wrapper {
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-Radius: 50%;
+   background-color: #ff4f4f;
+   
+  //animation: pulse 3s ease-in-out infinite;
+}*/
+
+
+
+
+/*.change-img{width: 5vw; height: auto; color: white;
+           animation:slide-up-down 2s ease infinite; }
+           @keyframes slide-up-down {
+            0%{transform: translateY(0);}
+            50%{transform: translateY(5vh);}
+            100%{transform: translateY(0);}
+          }*/
+
